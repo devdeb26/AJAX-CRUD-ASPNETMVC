@@ -1,0 +1,78 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+*{
+    margin: 0;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top:56px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.navbar {
+    background-color: #0871B3;
+}
+
+.hero-header {
+    background-color: #F1F2F6;
+}
+.hero-header > h2 {
+    color: #5C7E9F;
+}
+
+.btnAdd {
+    background-color: #0870B2;
+    color:white;
+    font-size:14px;
+}
+.btnAdd > .fa{
+    font-size:14px;
+}
+.table {
+    color: #295781;
+}
+.table-row {
+    font-weight: normal;
+    font-size: 14px;
+}
+tbody{
+    font-size:15px;
+}
+table.dataTable thead th{
+    border-bottom:1px solid white !important;
+    border-top:none;
+}
+
+
+table.dataTable.no-footer {
+    border-bottom: 1px solid #dee2e6;
+}
+
+hr {
+    border-top: 1px solid #000;
+}
+
+.btnEdit {
+    color: #295781;
+}
+.btnDelete {
+    color: #295781;
+}

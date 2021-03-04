@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudAJAXMVC", "CrudAJAXMVC\CrudAJAXMVC.csproj", "{44C79B24-627C-409A-9375-EF42353863FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44C79B24-627C-409A-9375-EF42353863FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C79B24-627C-409A-9375-EF42353863FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C79B24-627C-409A-9375-EF42353863FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C79B24-627C-409A-9375-EF42353863FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C04D936D-D7ED-4366-8175-82B7E89C6C06}
+	EndGlobalSection
+EndGlobal

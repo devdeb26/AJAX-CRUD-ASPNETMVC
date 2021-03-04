@@ -1,0 +1,67 @@
+﻿@model CrudAJAXMVC.Models.EmployeeViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<div class="p-3 d-flex hero-header border">
+    <h2>CRUD</h2>
+    <button class="btn btnAdd ml-auto" data-toggle="modal" data-target="#formModal"><i class="fa fa-plus mr-2"></i>Add</button>
+</div>
+<table class="table" id="EmployeeListDT">
+    <thead>
+        <tr class="table-row font-weight-light">
+            <th scope="col">First Name</th>
+            <th scope="col">Middle Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Date Hired</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+</table>
+
+@using (Html.BeginForm("", ""))
+{
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog .modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Employee Details</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    @Html.TextBoxFor(x => x.EmployeeID, new { @class = "form-control txtEmpID hidden", @obj ="hidden" , @style = "display: none;" })
+                    <div class="form-group">
+                        <label>Employee Name:</label>
+                        @Html.TextBoxFor(x => x.EmpName, new { @class = "form-control txtEmpName" })
+                        <span class="text-danger">@Html.ValidationMessageFor(x => x.EmpName)</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Employee Middle Name:</label>
+                        @Html.TextBoxFor(x => x.EmpMidName, new { @class = "form-control txtEmpMidName" })
+                        <span class="text-danger">@Html.ValidationMessageFor(x => x.EmpMidName)</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Employee Last Name:</label>
+                        @Html.TextBoxFor(x => x.EmpLastName, new { @class = "form-control txtEmpLastName" })
+                        <span class="text-danger">@Html.ValidationMessageFor(x => x.EmpLastName)</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Date Hired:</label>
+                        @Html.TextBoxFor(x => x.DateHired, new { @class = "form-control datepicker" })
+                        <span class="text-danger">@Html.ValidationMessageFor(x => x.DateHired)</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary btnAddEmployee">Save changes</button>
+                    <button type="submit" class="btn btn-primary btnEditEmployee" hidden>Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+
